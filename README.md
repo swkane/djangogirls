@@ -11,3 +11,7 @@
 
 4. Run Server
    `python manage.py runserver`
+
+## Hosted on Heroku
+
+`https://sam-django-blog.herokuapp.com/`
