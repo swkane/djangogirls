@@ -29,7 +29,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u-!wpd_#35exlak#re@duojibui&oj1argrh$$r(3skjk-dz9_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
                  '.pythonanywhere.com', '.herokuapp.com']
@@ -144,7 +145,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # attempt to overwrite settings.py with local_settings
-# try:
-#     from local_settings import *
-# except ImportError:
-#     pass
+try:
+    from local_settings import *
+except ImportError:
+    pass
