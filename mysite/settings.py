@@ -139,9 +139,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # old
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 # white noise recommended
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# attempt to overwrite settings.py with local_settings
 # try:
 #     from local_settings import *
 # except ImportError:
